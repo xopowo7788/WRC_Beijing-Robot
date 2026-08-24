@@ -1,0 +1,317 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07162e">
+<title>2026 베이징 로봇산업 벤치마킹 출장 보고</title>
+<style>
+:root{
+  --navy:#07162e; --navy2:#0b2b52; --blue:#2f6fa9; --ice:#eef5fb;
+  --ink:#102033; --muted:#6e7c8f; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;background:#08172d;color:#fff}
+a{color:inherit}
+.topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:18px;padding:12px 18px;background:rgba(5,16,34,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{font-weight:900;letter-spacing:.03em;white-space:nowrap}
+.navlinks{display:flex;gap:8px;overflow:auto;scrollbar-width:none;flex:1}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{font-size:12px;text-decoration:none;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.07);white-space:nowrap}
+.navlinks a:hover{background:rgba(255,255,255,.14)}
+.edit-btn{border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;border-radius:999px;padding:8px 12px;cursor:pointer}
+section{min-height:88vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.wrap{width:min(1180px,92vw);margin:0 auto;padding:70px 0}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#9dc9f1;font-weight:800;margin-bottom:12px}
+h1{font-size:clamp(42px,7vw,90px);line-height:.98;margin:0 0 20px;letter-spacing:-.04em}
+h2{font-size:clamp(34px,5vw,62px);line-height:1.02;margin:0 0 18px;letter-spacing:-.035em}
+h3{font-size:22px;margin:0 0 12px}
+.lead{font-size:clamp(18px,2.2vw,28px);line-height:1.5;color:#d5e3f1;max-width:850px}
+.hero{background:radial-gradient(circle at 75% 24%,rgba(72,142,205,.36),transparent 28%),linear-gradient(135deg,#061329,#0b2f59 70%,#173d63)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-collage{position:relative;min-height:520px}
+.hero-collage img{position:absolute;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.24);box-shadow:0 22px 55px rgba(0,0,0,.35)}
+.hero-collage .a{width:62%;height:72%;right:0;top:2%}
+.hero-collage .b{width:48%;height:48%;left:0;bottom:0}
+.hero-collage .c{width:34%;height:38%;left:12%;top:0}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.badge{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);padding:9px 12px;border-radius:999px;font-size:13px}
+.light{background:#f7fafc;color:var(--ink)}
+.light .eyebrow{color:#3c74a5}
+.light .lead{color:#4e6074}
+.dark{background:linear-gradient(135deg,#07172d,#0c2748)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;color:var(--ink);border-radius:22px;padding:26px;box-shadow:0 14px 35px rgba(22,50,82,.10)}
+.dark .card{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.09);box-shadow:none}
+.kpi{font-size:38px;font-weight:900;color:#0c4f87;letter-spacing:-.03em}
+.dark .kpi{color:#9cd0ff}
+.kpi-label{font-size:13px;color:#718197;margin-top:6px}
+.dark .kpi-label{color:#b9c9d8}
+.bullets{display:grid;gap:13px;margin-top:22px}
+.bullet{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.55}
+.dot{flex:0 0 9px;height:9px;border-radius:50%;background:#3b80b8;margin-top:8px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.photo-grid.four{grid-template-columns:repeat(4,1fr)}
+.photo-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;background:#dfe8ef}
+.photo-grid img.land{aspect-ratio:16/10}
+.quote{font-size:clamp(28px,4.5vw,58px);font-weight:900;line-height:1.08;letter-spacing:-.04em}
+.arrowflow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:28px 0}
+.pill{padding:16px 20px;border-radius:16px;font-size:18px;font-weight:850;background:#fff;color:#09223e}
+.arrow{font-size:28px;color:#9ecbf2}
+.video-section{background:#050b15}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.video-card{background:#101a29;border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden}
+.video-card video{width:100%;aspect-ratio:9/16;display:block;background:#000;object-fit:cover}
+.video-meta{padding:13px 14px;font-size:14px}
+.empty-video{grid-column:1/-1;padding:32px;border:1px dashed rgba(255,255,255,.22);border-radius:18px;color:#aebed0;text-align:center;line-height:1.7}
+.footer{padding:45px 0;background:#040a12;color:#8fa3b7}
+.footer .wrap{padding:0}
+.controls{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;gap:8px}
+.ctrl{border:0;background:rgba(5,16,34,.82);color:#fff;width:44px;height:44px;border-radius:50%;font-size:18px;cursor:pointer;backdrop-filter:blur(10px);box-shadow:0 6px 22px rgba(0,0,0,.25)}
+.editor{position:fixed;right:16px;top:65px;width:min(420px,calc(100vw - 32px));max-height:75vh;overflow:auto;background:#fff;color:#13243a;border-radius:18px;padding:18px;z-index:60;box-shadow:0 30px 80px rgba(0,0,0,.35);display:none}
+.editor.open{display:block}
+.editor h3{margin-bottom:4px}
+.editor p{font-size:13px;color:#65768a;line-height:1.5}
+.editor label{display:block;font-size:12px;font-weight:800;margin:13px 0 5px}
+.editor input{width:100%;padding:11px;border:1px solid #d7e0e9;border-radius:10px;font-size:14px}
+.editor .row{display:flex;gap:8px;margin-top:10px}
+.editor button{border:0;border-radius:10px;padding:10px 12px;cursor:pointer;font-weight:800}
+.primary{background:#0d5c97;color:#fff}
+.secondary{background:#edf3f8;color:#23405d}
+.temp-list{display:grid;gap:10px;margin-top:12px}
+.temp-item{background:#f5f8fb;border-radius:12px;padding:10px;font-size:12px}
+@media(max-width:800px){
+  section{min-height:auto}.wrap{padding:54px 0}.hero-grid,.grid2{grid-template-columns:1fr}.hero-collage{min-height:420px}.grid3{grid-template-columns:1fr}.photo-grid,.photo-grid.four{grid-template-columns:repeat(2,1fr)}.video-grid{grid-template-columns:1fr 1fr}.logo{display:none}.topnav{gap:8px}
+}
+@media(max-width:520px){
+  h1{font-size:44px}.hero-collage{min-height:360px}.photo-grid,.photo-grid.four,.video-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <div class="logo">BEIJING ROBOT 2026</div>
+  <div class="navlinks">
+    <a href="#overview">출장 개요</a><a href="#wrc">WRC</a><a href="#mall">Robot Mall</a>
+    <a href="#galbot">Galbot</a><a href="#gaotu">Gaotu</a><a href="#insight">Insight</a><a href="#videos">Videos</a>
+  </div>
+  <button class="edit-btn" id="editToggle" type="button">영상 관리</button>
+</nav>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Global Business Division · 2026.08</div>
+      <h1>2026 베이징<br>로봇산업<br>벤치마킹 출장</h1>
+      <p class="lead">WRC 2026 · Yizhuang Robot Mall · Galbot · Gaotu Education</p>
+      <div class="badges"><span class="badge">3박 4일</span><span class="badge">Embodied AI</span><span class="badge">Robot × Education</span><span class="badge">Business Benchmarking</span></div>
+    </div>
+    <div class="hero-collage">
+      <img class="a" src="assets/images/img-010.png" alt="Yizhuang Robot Mall">
+      <img class="b" src="assets/images/img-021.png" alt="Galbot 로봇 카페">
+      <img class="c" src="assets/images/img-002.png" alt="WRC 현장">
+    </div>
+  </div>
+</section>
+
+<section class="light" id="overview">
+  <div class="wrap">
+    <div class="eyebrow">01 · Trip Overview</div>
+    <h2>출장 목적</h2>
+    <p class="lead">세계로봇대회 참관과 베이징 현지 로봇·AI 기업 벤치마킹을 통해 <b>로봇 × 교육 융합 사업기회</b>를 발굴.</p>
+    <div class="grid3" style="margin-top:30px">
+      <div class="card"><div class="kpi">8.19–22</div><div class="kpi-label">2026 · 3박 4일</div></div>
+      <div class="card"><div class="kpi">Beijing</div><div class="kpi-label">亦庄 · 中关村</div></div>
+      <div class="card"><div class="kpi">4 Focus</div><div class="kpi-label">WRC · Robot Mall · Galbot · Gaotu</div></div>
+    </div>
+    <div class="grid2" style="margin-top:30px">
+      <div class="card"><h3>무엇을 확인했나</h3><div class="bullets">
+        <div class="bullet"><span class="dot"></span><span>중국 로봇·Embodied AI의 최신 기술 방향</span></div>
+        <div class="bullet"><span class="dot"></span><span>로봇의 실제 소비·서비스 시장 진입 수준</span></div>
+        <div class="bullet"><span class="dot"></span><span>로봇 하드웨어와 AI Brain의 결합 및 Task 수행 능력</span></div>
+        <div class="bullet"><span class="dot"></span><span>AI 교육 제품·콘텐츠·신사업 실험 구조</span></div>
+      </div></div>
+      <div class="card"><h3>아이스크림미디어 관점</h3><div class="bullets">
+        <div class="bullet"><span class="dot"></span><span>교육용 완구 및 AI 학습도우미 가능성 검토</span></div>
+        <div class="bullet"><span class="dot"></span><span>실버산업 적용 가능 로봇 탐색</span></div>
+        <div class="bullet"><span class="dot"></span><span>Hardware 이후의 Application · Content 경쟁력 검증</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="wrc">
+  <div class="wrap">
+    <div class="eyebrow">02 · WRC 2026</div>
+    <h2>기술의 중심이<br>“동작 시연”에서 “Task 수행”으로</h2>
+    <div class="grid3" style="margin-top:26px">
+      <div class="card"><div class="kpi">52,000㎡</div><div class="kpi-label">전시면적</div></div>
+      <div class="card"><div class="kpi">300+</div><div class="kpi-label">참가기업</div></div>
+      <div class="card"><div class="kpi">2,000+</div><div class="kpi-label">전시품</div></div>
+    </div>
+    <div class="bullets" style="max-width:900px;margin-top:30px">
+      <div class="bullet"><span class="dot"></span><span>Vision · Voice · LLM 등 AI 기술이 로봇과 본격 결합</span></div>
+      <div class="bullet"><span class="dot"></span><span>감지 → 이해 → 의사결정 → 실행의 Embodied AI 기술 성숙</span></div>
+      <div class="bullet"><span class="dot"></span><span>산업 · 서비스 · 의료 · 가정용 등 실제 Application 전제 제품이 주류</span></div>
+    </div>
+    <div class="photo-grid">
+      <img src="assets/images/img-001.png" alt="휴머노이드 서비스 로봇"><img src="assets/images/img-002.png" alt="JD.com 로봇 시연"><img src="assets/images/img-003.png" alt="휴머노이드 피아노">
+      <img src="assets/images/img-004.png" alt="휴머노이드 보행"><img src="assets/images/img-005.png" alt="조리 로봇"><img src="assets/images/img-006.png" alt="정형외과 수술 로봇">
+    </div>
+  </div>
+</section>
+
+<section class="light" id="mall">
+  <div class="wrap">
+    <div class="eyebrow">03 · Yizhuang Robot Mall</div>
+    <h2>R&D에서 판매까지 연결된<br>로봇 산업 생태계</h2>
+    <div class="grid2">
+      <div><p class="lead">베이징시가 조성한 로봇산업 클러스터. 약 300개 생태계 기업이 집적되고 핵심부품–제조–실증–판매가 연결되는 구조.</p>
+        <div class="bullets">
+          <div class="bullet"><span class="dot"></span><span>전시 · 체험 · 판매 · A/S가 결합된 로봇 유통 모델</span></div>
+          <div class="bullet"><span class="dot"></span><span>휴머노이드 · 서비스 · 교육 · 가정용 로봇을 소비자 접점에서 확인</span></div>
+          <div class="bullet"><span class="dot"></span><span>키즈 · 시니어 · 커머스 등 상용화 활용 분야 확대</span></div>
+        </div>
+      </div>
+      <img src="assets/images/img-010.png" alt="Robot Mall 외관" style="width:100%;max-height:520px;object-fit:cover;border-radius:24px">
+    </div>
+    <div class="photo-grid four">
+      <img src="assets/images/img-012.png" alt="로봇 복싱"><img src="assets/images/img-013.png" alt="로봇 축구"><img src="assets/images/img-014.png" alt="로봇 군무"><img src="assets/images/img-018.png" alt="로봇견 체험">
+      <img src="assets/images/img-015.png" alt="아인슈타인 로봇"><img src="assets/images/img-016.png" alt="헬스케어 진단"><img src="assets/images/img-019.png" alt="택배 물류 작업"><img src="assets/images/img-020.png" alt="의료 시연">
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="galbot">
+  <div class="wrap">
+    <div class="eyebrow">04 · GALBOT</div>
+    <h2>Hardware보다<br>Embodied AI와 Task</h2>
+    <div class="grid2">
+      <div><p class="lead">2023년 설립된 Embodied AI 기반 범용 로봇 기업. 지시 이해 → 환경 인식 → 행동 계획 → 실행을 실제 상용 환경으로 확장 중.</p>
+        <div class="bullets">
+          <div class="bullet"><span class="dot"></span><span>리테일 · 제조 · 의료 적용 범위 빠르게 확대</span></div>
+          <div class="bullet"><span class="dot"></span><span>합성데이터 기반 Sim2Real 방식으로 개발 속도·상용화 효율 확보</span></div>
+          <div class="bullet"><span class="dot"></span><span>직업교육 등 교육·훈련 영역 적용 시나리오도 검토</span></div>
+        </div>
+      </div>
+      <div class="card"><div class="quote">“로봇의 핵심 경쟁력은<br>몸체보다 Brain과<br>실제 Task 수행 능력”</div></div>
+    </div>
+    <div class="photo-grid"><img src="assets/images/img-021.png" alt="Galbot 무인 로봇 카페"><img src="assets/images/img-022.png" alt="Galbot 리테일 서비스"><img src="assets/images/img-023.png" alt="Galbot 휴머노이드"></div>
+  </div>
+</section>
+
+<section class="light" id="gaotu">
+  <div class="wrap">
+    <div class="eyebrow">05 · Gaotu Education</div>
+    <h2>AI를 “교사 대체”가 아닌<br>“교육 효율 제고 도구”로</h2>
+    <div class="grid2">
+      <div class="card"><h3>Gaotu의 접근</h3><div class="bullets">
+        <div class="bullet"><span class="dot"></span><span>AI 교육 적용 시 교육 효과와 사업성을 동시에 검증</span></div>
+        <div class="bullet"><span class="dot"></span><span>안정적 핵심사업 기반 위에서 신규 영역을 작은 단위로 지속 실험</span></div>
+        <div class="bullet"><span class="dot"></span><span>毛豆爱学(MODO), 디지털 휴먼, AI 콘텐츠 공장 등 제품 라인업 확인</span></div>
+      </div></div>
+      <div class="card"><h3>당사 관점</h3><p style="line-height:1.7;color:#506176">B2C 직접 판매 구조로 인해 전체 상품의 직접 협력보다는 디지털 휴먼·AI 콘텐츠 자동화 등 <b>개별 기술 요소 단위의 벤치마킹</b>이 현실적.</p></div>
+    </div>
+    <div class="photo-grid" style="grid-template-columns:1.3fr 1fr"><img class="land" src="assets/images/img-024.png" alt="Gaotu 교육 제품 소개"><img class="land" src="assets/images/img-025.png" alt="Gaotu CEO 미팅"></div>
+  </div>
+</section>
+
+<section class="dark" id="insight">
+  <div class="wrap">
+    <div class="eyebrow">06 · Core Insight</div>
+    <h2>ROBOT HARDWARE → AI BRAIN → APPLICATION</h2>
+    <div class="arrowflow"><span class="pill">ROBOT HARDWARE</span><span class="arrow">→</span><span class="pill">AI BRAIN</span><span class="arrow">→</span><span class="pill">APPLICATION</span><span class="arrow">→</span><span class="pill">CONTENT</span></div>
+    <div class="grid2">
+      <div class="card"><h3>핵심 인사이트</h3><div class="bullets">
+        <div class="bullet"><span class="dot"></span><span>하드웨어 자체만으로는 지속적인 차별화가 어려운 구조로 전환</span></div>
+        <div class="bullet"><span class="dot"></span><span>멀티모달 인식 · LLM/VLA · Task Planning · 자율 행동이 실질적 성능을 좌우</span></div>
+        <div class="bullet"><span class="dot"></span><span>경쟁의 축이 “좋은 로봇”에서 “좋은 콘텐츠·시나리오를 로봇에 이식”하는 방향으로 이동</span></div>
+      </div></div>
+      <div class="card"><h3>Next Step</h3><div class="bullets">
+        <div class="bullet"><span class="dot"></span><span>교육용 완구 시장의 국내외 경쟁제품 및 가격대 조사</span></div>
+        <div class="bullet"><span class="dot"></span><span>감정교류·학습도우미형 완구의 기술 수준과 사업성 파악</span></div>
+        <div class="bullet"><span class="dot"></span><span>직업교육 및 실버산업 적용 로봇 추가 검토</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="video-section" id="videos">
+  <div class="wrap">
+    <div class="eyebrow">07 · Field Videos</div>
+    <h2>현장 영상</h2>
+    <p class="lead">영상은 <b>videos.js</b>에서 자유롭게 추가·삭제·순서 변경할 수 있습니다. 우측 상단 <b>영상 관리</b>는 발표 전에 임시로 영상을 테스트하는 용도입니다.</p>
+    <div id="videoGrid" class="video-grid"></div>
+  </div>
+</section>
+
+<footer class="footer"><div class="wrap">2026 Beijing Robot Industry Benchmarking · Global Business Division</div></footer>
+
+<div class="controls"><button class="ctrl" id="prevSection" type="button">↑</button><button class="ctrl" id="nextSection" type="button">↓</button></div>
+
+<aside class="editor" id="editor">
+  <h3>영상 임시 관리</h3>
+  <p>여기서 추가한 영상은 현재 브라우저 세션에서만 보입니다. GitHub에 영구 반영하려면 <b>assets/videos</b>에 파일을 넣고 <b>videos.js</b>를 수정하세요.</p>
+  <label>영상 파일 선택</label><input type="file" id="localVideo" accept="video/*">
+  <label>영상 제목</label><input type="text" id="localTitle" placeholder="예: Galbot 현장 시연">
+  <div class="row"><button class="primary" id="addLocal" type="button">현재 세션에 추가</button><button class="secondary" id="clearLocal" type="button">임시 영상 삭제</button></div>
+  <div class="temp-list" id="tempList"></div>
+</aside>
+
+<script src="videos.js"></script>
+<script>
+(function(){
+  const videoGrid=document.getElementById('videoGrid');
+  const localVideos=[];
+  const configured=(typeof VIDEO_CONFIG!=='undefined')?VIDEO_CONFIG:[];
+  const renderVideos=()=>{
+    const all=[...configured,...localVideos];
+    videoGrid.innerHTML='';
+    if(!all.length){
+      videoGrid.innerHTML='<div class="empty-video">아직 영상이 없습니다.<br><b>assets/videos</b>에 MP4를 넣고 <b>videos.js</b>만 수정하면 자동으로 여기에 표시됩니다.</div>';
+      return;
+    }
+    all.forEach((item,idx)=>{
+      const card=document.createElement('article'); card.className='video-card';
+      const v=document.createElement('video'); v.controls=true; v.playsInline=true; v.preload='metadata'; v.src=item.src; if(item.poster) v.poster=item.poster;
+      const meta=document.createElement('div'); meta.className='video-meta'; meta.textContent=item.title||('현장 영상 '+(idx+1));
+      card.append(v,meta); videoGrid.append(card);
+    });
+  };
+  renderVideos();
+
+  const editor=document.getElementById('editor');
+  document.getElementById('editToggle').addEventListener('click',()=>editor.classList.toggle('open'));
+  const tempList=document.getElementById('tempList');
+  const renderTemp=()=>{tempList.innerHTML='';localVideos.forEach((v,i)=>{const el=document.createElement('div');el.className='temp-item';el.textContent=(i+1)+'. '+v.title;tempList.append(el);});};
+  document.getElementById('addLocal').addEventListener('click',()=>{
+    const file=document.getElementById('localVideo').files[0];
+    if(!file){alert('영상 파일을 먼저 선택하세요.');return}
+    const title=document.getElementById('localTitle').value.trim()||file.name;
+    localVideos.push({title,src:URL.createObjectURL(file)});
+    document.getElementById('localTitle').value='';document.getElementById('localVideo').value='';
+    renderTemp();renderVideos();
+  });
+  document.getElementById('clearLocal').addEventListener('click',()=>{localVideos.splice(0,localVideos.length);renderTemp();renderVideos();});
+
+  const sections=[...document.querySelectorAll('section')];
+  const go=(dir)=>{
+    let best=0,dist=Infinity;
+    sections.forEach((s,i)=>{const d=Math.abs(s.getBoundingClientRect().top);if(d<dist){dist=d;best=i}});
+    const next=Math.max(0,Math.min(sections.length-1,best+dir));sections[next].scrollIntoView({behavior:'smooth',block:'start'});
+  };
+  document.getElementById('prevSection').addEventListener('click',()=>go(-1));
+  document.getElementById('nextSection').addEventListener('click',()=>go(1));
+  window.addEventListener('keydown',e=>{
+    if(['INPUT','TEXTAREA'].includes(document.activeElement.tagName))return;
+    if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();go(1)}
+    if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();go(-1)}
+    if(e.key.toLowerCase()==='e') editor.classList.toggle('open');
+  });
+})();
+</script>
+</body>
+</html>
